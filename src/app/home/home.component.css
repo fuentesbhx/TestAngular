@@ -1,0 +1,27 @@
+
+
+header, .row {
+    display: flex;
+    border: 1px solid #000;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+header .col {
+    background-color: #000;
+    color: #fff;
+    font-size: 20px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.col {
+    flex: 1;
+}
+
+.completed {
+    background-color: aquamarine;
+}

@@ -1,0 +1,17 @@
+<h1>Users</h1>
+<section>
+    <header>
+      <div class="col">ID</div>
+      <div class="col">USER ID</div>
+      <div class="col">TITLE</div>
+      <div class="col">COMPLETED?</div>
+      <div class="col"></div>
+    </header>
+    <div class="row" *ngFor="let t of todo" [ngClass]="t.completed?'completed':''">
+      <div class="col">{{t.id}}</div>
+      <div class="col">{{t.userId}}</div>
+      <div class="col">{{t.title}}</div>
+      <div class="col">{{t.completed}}</div>
+      <div class="col"><a [routerLink]="['detail', t.id]" class="btn btn-sm btn-primary me-1">Details</a></div>
+    </div>
+  </section>
